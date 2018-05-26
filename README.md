@@ -7,7 +7,7 @@ Wicket 8
 
 ## Document
 Extract doc/yipuran-wicketcustom-doc.zip and see the Javadoc
-
+or [Wiki Page](../../wiki)
 
 ## Setup pom.xml
 ```
