@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+/*
+ * noframe-modal.css
+ */
+div.wicket-mask-dark {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	background-color: black;
+	filter: alpha(opacity=10);
+	background-image: url('transparent2.png');
+}
+
+div.wicket-mask-transparent {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+	background-image: url('transparent1.gif');
+}
+
+div.noframe-modal{
+	position: fixed;
+	_position: absolute;
+	z-index: 20001;
+	visibility: hidden;
+}
+
+div.noframe-modal div.w_content_3 {
+	border: 1px solid #bbb;
+	padding: 0px;
+}
+
+div.noframe-modal div.w_content {
+	width: 100%;
+	background-color: white;
+}
+
+div.noframe-modal div.w_content_container {
+	position: relative;
+}
+
+div.noframe-modal iframe.noframe {
+	width: 100%;
+	/***
+	height: 400px;
+	****/
+	height: 100px;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	position: relative;
+}
+
+
+
