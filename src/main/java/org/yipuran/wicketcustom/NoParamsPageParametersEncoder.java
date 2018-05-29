@@ -6,8 +6,21 @@ import org.apache.wicket.request.mapper.parameter.PageParametersEncoder;
 
 /**
  * No PageParameters Encoder.
+ * （注意）
+ *   getRequestCycle().getRequest().getQueryParameters() による IRequestPatameters からの取得は不可能になる。
+ *
  * <PRE>
- * Usage:
+ * （注意）
+ *   getRequestCycle().getRequest().getQueryParameters() による IRequestPatameters からの取得は不可能になる。
+ *   従って PageParameter による送信は呼出し側からページインスタンス生成で渡す必要があり、
+ *         PageParameters parameters = new PageParameters();
+ *         setResponsePage(new FooPage(parameters));
+ *   の手段が必要である。
+ *
+ *   NoVersionMapper を使用した場合はこの NoParamsPageParametersEncoder で MountedMapper、mountをしても無効で
+ *   NoVersionMapper が有効になる。
+ * （例）
+ *
  * at WebApplication  init() method
  *
  *    mount(new MountedMapper("/foo", FooPage.class, new NoParamsPageParametersEncoder()));

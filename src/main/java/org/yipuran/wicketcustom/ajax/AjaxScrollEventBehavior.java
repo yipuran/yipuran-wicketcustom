@@ -6,6 +6,13 @@ import org.danekja.java.util.function.serializable.SerializableConsumer;
 
 /**
  * AjaxScrollEventBehavior.
+ *  <PRE>
+ *    （使用例）スクロールイベントを持つコンポーネントで付与する
+ *
+ *    component.add(AjaxScrollEventBehavior.onScroll(t->{
+ *       // todo
+ *    });
+ * </PRE>
  */
 public abstract class AjaxScrollEventBehavior extends AjaxEventBehavior{
 

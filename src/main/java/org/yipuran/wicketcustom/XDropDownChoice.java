@@ -8,7 +8,9 @@ import org.apache.wicket.model.IModel;
 /**
  * DropDownChoiceの拡張.
  * <PRE>
- * final XDropDownChoice<Item> select_item = new DropDownChoiceEx<Item>("select_item", new Model<Item>(), createItemList(), e->e.name );
+ * DropDownChoice において、IChoiceRendererの getDisplayValue をラムダ式で書けるようにしたもの
+ * (例）
+ * final XDropDownChoice<Item> select_item = new XDropDownChoice<Item>("select_item", new Model<Item>(), createItemList(), e->e.name );
  * </PRE>
  * @param <T>
  */

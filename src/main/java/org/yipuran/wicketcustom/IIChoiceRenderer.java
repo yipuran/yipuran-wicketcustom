@@ -7,6 +7,9 @@ import org.apache.wicket.model.IModel;
 
 /**
  * IChoiceRendererの拡張. IChoiceRendererの getDisplayValue をラムダ式で使う目的
+ * <PRE>
+ * XDropDownChoice（DropDownChoiceの拡張）をIChoiceRendererの getDisplayValue をラムダ式で書く為の関数型インターフェース
+ * </PRE>
  * @param <T>
  */
 @FunctionalInterface

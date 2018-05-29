@@ -16,27 +16,27 @@ import org.danekja.java.util.function.serializable.SerializableSupplier;
  * AJAX Download.
  * <PRE>
  * final AJAXDownload download = new AJAXDownload(){
- * 	@Override
+ * 	＠Override
  * 	protected IResourceStream getResourceStream(){
  * 		return new AbstractResourceStreamWriter(){
- * 			@Override
+ * 			＠Override
  * 			public void write(OutputStream out) throws IOException{
  *
  * 			}
- * 			@Override
+ * 			＠Override
  * 			public String getContentType(){
  * 				//return "text/comma-separated-values";
  * 				return "text/csv";
  * 			}
  *			};
  *		}
- *		@Override
+ *		＠Override
  *		protected String getFileName(){
  *			return "aaa.csv";
  *		}
  *	};
  *	queue(new AjaxButton("csvout"){
- *		@Override
+ *		＠Override
  *		protected void onSubmit(AjaxRequestTarget target, Form<?> form){
  *			// AJAXダウンロード コールバック実行
  *			download.callBackDownload(target);

@@ -8,6 +8,7 @@ import org.apache.wicket.model.IModel;
 /**
  * Integer型 DropDownChoice 用 IChoiceRenderer. optionタグ value 属性に Integer 値とするため。
  * <PRE>
+ * （例） 整数１～１２までの DropDownChoice
  *
  * new DropDownChoice<>("select", new Model<>(), IntStream.rangeClosed(1, 12).boxed().collect(Collectors.toList()), new IntegerChoiceRenderer());
  *

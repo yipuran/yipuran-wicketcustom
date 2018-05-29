@@ -12,7 +12,10 @@ import org.apache.wicket.model.IModel;
 
 /**
  * YAjaxTabbedPanel = AjaxTabbedPanel の継承.
- * onBeforeChangeTab メソッドオーバーライドする目的
+ * <PRE>
+ * Tab クリック時にクリックする前の Tabインデックスを捕捉し onBeforeChangeTab をタブ切り替え前に実行する。
+ * onBeforeChangeTab メソッドオーバーライドして使用する。
+ * </PRE>
  * @param <T> T
  */
 public class YAjaxTabbedPanel<T extends ITab> extends AjaxTabbedPanel<T>{
@@ -22,7 +25,7 @@ public class YAjaxTabbedPanel<T extends ITab> extends AjaxTabbedPanel<T>{
 	 * @param id Wicket-ID
 	 * @param tabs タブComponentリスト
 	 */
-	public YAjaxTabbedPanel(String id, List tabs){
+	public YAjaxTabbedPanel(String id, List<T> tabs){
 		super(id, tabs);
 	}
 	/**
@@ -31,7 +34,7 @@ public class YAjaxTabbedPanel<T extends ITab> extends AjaxTabbedPanel<T>{
 	 * @param tabs タブComponentリスト
 	 * @param model IModel
 	 */
-	public YAjaxTabbedPanel(String id, List tabs, IModel model){
+	public YAjaxTabbedPanel(String id, List<T> tabs, IModel<Integer> model){
 		super(id, tabs, model);
 	}
 	@Override
