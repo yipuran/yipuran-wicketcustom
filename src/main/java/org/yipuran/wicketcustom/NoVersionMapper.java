@@ -13,7 +13,7 @@ import org.apache.wicket.request.mapper.parameter.PageParametersEncoder;
  * URLからページバージョン番号を除外する mount Mapper.
  * <PRE>
  * 使用例 WebApplocation の init() の中で各々の WebPage に対して指定する
- *     getRootRequestMapperAsCompound().add(new NoVersionMapper("/", HomePage.class));
+ *     getRootRequestMapperAsCompound().add(new NoVersionMapper("/foo", FooPage.class));
  * </PRE>
  */
 public class NoVersionMapper extends MountedMapper{
