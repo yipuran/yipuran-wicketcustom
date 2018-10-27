@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/** confirm-panel.css */
+.comfirm-panel{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.comfirm-content{
+   width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.comfirm-content ul{
+	margin: 0;
+	padding: 0;
+}
+.comfirm-content li{
+   list-style-type: none;
+   white-space: nowrap;
+   margin: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.comfirm-content table{
+	border-collapse: separate;
+	border-spacing: 0.4rem;
+}
+.comfirm-content td{
+	padding: 0 2rem;
+}
+.comfirm-content button{
+	min-width: 3rem;
+	white-space: nowrap;
+}

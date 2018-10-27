@@ -12,7 +12,7 @@ import org.danekja.java.util.function.serializable.SerializableConsumer;
  * AjaxFormSubmitBehavior.onSubmit 等、例外捕捉するシリアライズな Consumerを必要とするケースで使用する。
  * 提供する of メソッドで生成する。
  * （使用例）
- * queue(new Button("send").add(AjaxFormSubmitBehavior.onSubmit("click", SerialAndThrowableConsumer.of(t->{
+ * queue(new Button("send").add(AjaxFormSubmitBehavior.onSubmit("click", SerialThrowableConsumer.of(t->{
  *   // t = AjaxRequestTarget
  *   label.setDefaultModelObject(infield.getValue());
  *   t.add(response);
@@ -20,8 +20,6 @@ import org.danekja.java.util.function.serializable.SerializableConsumer;
  *   	t.add(response);
  * }))));
  *
- *    例外捕捉処理を書かない of(SerialThrowableConsumer<T> consumer) メソッドは、Wicketの Page としては
- *    書くべきでない。RequestCycle で例外捕捉しなくてはならなくなるからだ。
  * AjaxFormSubmitBehavior.onSubmit 以外の他の使い道の候補
  *    OnChangeAjaxBehavior.onChange
  *    AjaxFormChoiceComponentUpdatingBehavior.onUpdateChoice

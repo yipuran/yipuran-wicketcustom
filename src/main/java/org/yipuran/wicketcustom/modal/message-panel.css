@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* message-panel.css  */
+.modal-panel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal-panel-content{
+   width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.modal-panel-content li{
+   list-style-type: none;
+   white-space: nowrap;
+   margin: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+

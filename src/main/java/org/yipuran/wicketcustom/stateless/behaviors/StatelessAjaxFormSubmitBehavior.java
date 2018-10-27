@@ -88,10 +88,7 @@ public class StatelessAjaxFormSubmitBehavior extends StatelessAjaxEventBehavior
 		{
 			return (Form<?>)component;
 		}
-		else
-		{
-			return component.findParent(Form.class);
-		}
+		return component.findParent(Form.class);
 	}
 
 	@Override

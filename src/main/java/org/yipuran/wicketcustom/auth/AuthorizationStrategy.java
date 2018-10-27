@@ -59,9 +59,8 @@ public class AuthorizationStrategy implements IAuthorizationStrategy{
 					throw new RestartResponseAtInterceptPageException(signinPage);
 				}
 				return true;
-			}else{
-				throw new RestartResponseAtInterceptPageException(signinPage);
 			}
+			throw new RestartResponseAtInterceptPageException(signinPage);
 		}
 		return true;
 	}

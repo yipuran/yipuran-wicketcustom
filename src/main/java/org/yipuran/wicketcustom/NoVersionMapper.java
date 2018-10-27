@@ -35,8 +35,7 @@ public class NoVersionMapper extends MountedMapper{
 		if (requestHandler instanceof ListenerRequestHandler
 				|| requestHandler instanceof BookmarkableListenerRequestHandler){
 			return null;
-		}else{
-			return super.mapHandler(requestHandler);
 		}
+		return super.mapHandler(requestHandler);
 	}
 }
