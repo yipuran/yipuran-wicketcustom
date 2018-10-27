@@ -22,7 +22,7 @@ or [Wiki Page](../../wiki)
     <dependency>
         <groupId>org.yipuran.wicketcustom</groupId>
         <artifactId>yipuran-wicketcustom</artifactId>
-        <version>4.1</version>
+        <version>4.2</version>
     </dependency>
 </dependencies>
 ```
