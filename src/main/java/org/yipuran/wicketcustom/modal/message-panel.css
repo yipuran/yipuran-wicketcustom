@@ -11,6 +11,10 @@
    align-items: center;
    justify-content: space-around;
 }
+.modal-panel-content ul{
+	margin: 0;
+	padding: 0;
+}
 .modal-panel-content li{
    list-style-type: none;
    white-space: nowrap;
