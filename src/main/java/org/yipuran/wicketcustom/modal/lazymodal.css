@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+/* lazymodal.css */
+.lazy-modal-panel ul{
+   margin: 10px 0;
+   padding: 10px;
+}
+.lazy-modal-panel li{
+	list-style-type: none;
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.lazy-modal-panel li span{
+   margin: 40px 0 5px 0;
+}
+
+.lazy-modal-panel li span.reduce{
+	margin: 5px 40px;
+}
+#lazy_modal_progress{
+	position: absolute;
+	margin-top: 10px;
+}
+

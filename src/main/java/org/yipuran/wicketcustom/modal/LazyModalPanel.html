@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<body>
+<wicket:panel>
+   <form wicket:id="lazy_modal_form" id="lazy_modal_form" >
+      <section class="lazy-modal-panel">
+         <div>
+            <ul>
+               <li id="lazy_modal_progress_container"><div id="lazy_modal_progress"></div></li>
+               <li><span wicket:id="message"></span></li>
+               <li id="lazy_modal_close_container" style="display:none">
+                  <button wicket:id="lazy_modal_close" type="button"><span wicket:id="closeLabel"></span></button>
+               </li>
+               <li style="display:none">
+                  <button wicket:id="lazy_modal_start" id="lazy_modal_start" type="button"></button>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </form>
+<script type="text/javascript">
+var sizefitLazyModal = function(){
+      $('.w_content_container').css("height", $('.lazy-modal-panel ul').outerHeight(true) + "px" );
+      $('.wicket-modal').css("width", $('.lazy-modal-panel ul').outerWidth(true) + 22 + "px" );
+};
+var convergementLazy = function(){
+   $('#lazy_modal_progress_container').remove();
+   $('#lazy_modal_close_container').removeAttr('style');
+   $('.lazy-modal-panel li span').addClass('reduce');
+   $('.w_content_container').css("height", $('.lazy-modal-panel ul').outerHeight(true) + "px" );
+   $('.wicket-modal').css("width", $('.lazy-modal-panel ul li span').outerWidth(true) + 40 + "px" );
+};
+$(function(){
+   new Spinner().spin(document.getElementById('lazy_modal_progress'));
+   setTimeout("$('#lazy_modal_form').parent().parent().parent().parent().parent().prev().children('a').css('display','none');",100);
+});
+</script>
+</wicket:panel>
+</body>
+</html>
