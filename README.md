@@ -2,7 +2,7 @@
 Wicket custom Library
 
 ## Dependency
-Wicket 8
+Wicket 8.4.0
 
 
 ## Document
@@ -22,7 +22,7 @@ or [Wiki Page](../../wiki)
     <dependency>
         <groupId>org.yipuran.wicketcustom</groupId>
         <artifactId>yipuran-wicketcustom</artifactId>
-        <version>4.5</version>
+        <version>4.6</version>
     </dependency>
 </dependencies>
 ```
